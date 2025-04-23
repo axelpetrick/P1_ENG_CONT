@@ -132,8 +132,8 @@ export default function Dashboard() {
           ) : (
             <p className="col-span-3 text-center py-8 text-gray-500">
               Você ainda não está matriculado em nenhum curso.{" "}
-              <Link href="/courses">
-                <a className="text-primary hover:underline">Explorar cursos</a>
+              <Link href="/courses" className="text-primary hover:underline">
+                Explorar cursos
               </Link>
             </p>
           )}

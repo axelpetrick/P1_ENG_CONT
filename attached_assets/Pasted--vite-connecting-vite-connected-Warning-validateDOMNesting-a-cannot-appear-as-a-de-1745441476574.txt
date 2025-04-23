@@ -1,0 +1,43 @@
+[vite] connecting...
+[vite] connected.
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at a
+    at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:337:18
+    at div
+    at div
+    at div
+    at Dashboard (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/pages/Dashboard.tsx:32:26)
+    at Route (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:323:16)
+    at Switch (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:379:17)
+    at main
+    at div
+    at div
+    at AppLayout (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/components/layout/AppLayout.tsx:24:37)
+    at Router (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/App.tsx?v=Z7eDk8pVVvjYwRb_9UXTZ:35:26)
+    at Provider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=e0841d85:38:15)
+    at TooltipProvider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=e0841d85:64:5)
+    at QueryClientProvider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=e0841d85:2805:3)
+    at App
+at a
+at a
+at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:337:18
+at div
+at div
+at div
+at Dashboard (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/pages/Dashboard.tsx:32:26)
+at Route (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:323:16)
+at Switch (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:379:17)
+at main
+at div
+at div
+at AppLayout (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/components/layout/AppLayout.tsx:24:37)
+at Router (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/App.tsx?v=Z7eDk8pVVvjYwRb_9UXTZ:35:26)
+at Provider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=e0841d85:38:15)
+at TooltipProvider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=e0841d85:64:5)
+at QueryClientProvider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=e0841d85:2805:3)
+at App
+at t.value (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
