@@ -29,19 +29,19 @@ export async function createUserTable(db: Database): Promise<void> {
       'admin',
       adminPassword,
       'admin@example.com',
-      'Admin',
-      'User',
+      'Administrador',
+      'Sistema',
       'admin'
     );
     
     await db.run(
       `INSERT INTO users (username, password, email, first_name, last_name, role) 
        VALUES (?, ?, ?, ?, ?, ?)`,
-      'student',
+      'aluno',
       studentPassword,
-      'student@example.com',
-      'Student',
-      'User',
+      'aluno@example.com',
+      'Aluno',
+      'Padrão',
       'student'
     );
   }

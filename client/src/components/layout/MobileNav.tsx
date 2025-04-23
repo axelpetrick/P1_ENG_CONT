@@ -6,22 +6,22 @@ export default function MobileNav() {
 
   const navItems = [
     {
-      name: "Home",
+      name: "Início",
       path: "/",
       icon: <Home className="text-lg" />,
     },
     {
-      name: "Courses",
+      name: "Cursos",
       path: "/courses",
       icon: <GraduationCap className="text-lg" />,
     },
     {
-      name: "Notes",
+      name: "Anotações",
       path: "/notes",
       icon: <StickyNote className="text-lg" />,
     },
     {
-      name: "Profile",
+      name: "Perfil",
       path: "/profile",
       icon: <User className="text-lg" />,
     },

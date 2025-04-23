@@ -86,14 +86,14 @@ export type DashboardStats = z.infer<typeof dashboardStatsSchema>;
 
 // Auth Schemas
 export const loginSchema = z.object({
-  username: z.string().min(3, "Username must be at least 3 characters"),
-  password: z.string().min(6, "Password must be at least 6 characters"),
+  username: z.string().min(3, "Nome de usuário deve ter pelo menos 3 caracteres"),
+  password: z.string().min(6, "Senha deve ter pelo menos 6 caracteres"),
 });
 
 export const registerSchema = insertUserSchema.extend({
   confirmPassword: z.string(),
 }).refine(data => data.password === data.confirmPassword, {
-  message: "Passwords don't match",
+  message: "As senhas não coincidem",
   path: ["confirmPassword"],
 });
 

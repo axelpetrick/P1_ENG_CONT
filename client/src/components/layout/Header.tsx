@@ -23,7 +23,7 @@ export default function Header({ onToggleSidebar }: HeaderProps) {
         </Button>
       </div>
       
-      <div className="lg:hidden font-semibold text-primary">EduNotes</div>
+      <div className="lg:hidden font-semibold text-primary">EduNotas</div>
       
       <div className="flex items-center">
         {user && (
