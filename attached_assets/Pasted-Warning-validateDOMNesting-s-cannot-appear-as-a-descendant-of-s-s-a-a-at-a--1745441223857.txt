@@ -1,0 +1,25 @@
+Warning: validateDOMNesting(...): %s cannot appear as a descendant of <%s>.%s <a> a 
+    at a
+    at a
+    at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e0841d85:337:18
+    at li
+    at ul
+    at nav
+    at div
+    at div
+    at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BOL2CCOG.js?v=e0841d85:42:13
+    at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=e0841d85:116:13
+    at div
+    at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BOL2CCOG.js?v=e0841d85:42:13
+    at Provider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=e0841d85:38:15)
+    at https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=e0841d85:54:7
+    at _c (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/components/ui/scroll-area.tsx:21:11)
+    at aside
+    at Sidebar (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/components/layout/Sidebar.tsx:32:35)
+    at div
+    at AppLayout (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/components/layout/AppLayout.tsx:24:37)
+    at Router (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/src/App.tsx?v=fveFWwqEozakIXTapUZhu:35:26)
+    at Provider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=e0841d85:38:15)
+    at TooltipProvider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=e0841d85:64:5)
+    at QueryClientProvider (https://825ae3b5-574f-4644-bbb2-f842ea547b82-00-9k2zr4ib3r1g.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=e0841d85:2805:3)
+    at App
