@@ -34,22 +34,22 @@ export default function Sidebar({ isMobileSidebarOpen, closeMobileSidebar }: Sid
 
   const sidebarItems = [
     {
-      name: "Dashboard",
+      name: "Painel Principal",
       path: "/",
       icon: <Home className="h-5 w-5" />,
     },
     {
-      name: "My Courses",
+      name: "Meus Cursos",
       path: "/courses",
       icon: <GraduationCap className="h-5 w-5" />,
     },
     {
-      name: "My Notes",
+      name: "Minhas Anotações",
       path: "/notes",
       icon: <StickyNote className="h-5 w-5" />,
     },
     {
-      name: "Reports",
+      name: "Relatórios",
       path: "/reports",
       icon: <BarChart2 className="h-5 w-5" />,
     },
@@ -57,12 +57,12 @@ export default function Sidebar({ isMobileSidebarOpen, closeMobileSidebar }: Sid
 
   const adminItems = [
     {
-      name: "Manage Users",
+      name: "Gerenciar Usuários",
       path: "/admin/users",
       icon: <Users className="h-5 w-5" />,
     },
     {
-      name: "Manage Courses",
+      name: "Gerenciar Cursos",
       path: "/admin/courses",
       icon: <Edit className="h-5 w-5" />,
     },
@@ -92,7 +92,7 @@ export default function Sidebar({ isMobileSidebarOpen, closeMobileSidebar }: Sid
               <path d="M12 13.25V19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          EduNotes
+          EduNotas
         </h1>
       </div>
 
