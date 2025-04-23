@@ -20,13 +20,13 @@ export const register = async (req: Request, res: Response) => {
     // Check if username already exists
     const existingUsername = await storage.getUserByUsername(userData.username);
     if (existingUsername) {
-      return res.status(400).json({ message: 'Username already exists' });
+      return res.status(400).json({ message: 'Nome de usuário já existe' });
     }
 
     // Check if email already exists
     const existingEmail = await storage.getUserByEmail(userData.email);
     if (existingEmail) {
-      return res.status(400).json({ message: 'Email already exists' });
+      return res.status(400).json({ message: 'Email já está sendo utilizado' });
     }
 
     // Hash password
@@ -53,7 +53,7 @@ export const register = async (req: Request, res: Response) => {
     );
 
     return res.status(201).json({
-      message: 'User registered successfully',
+      message: 'Usuário registrado com sucesso',
       user: userWithoutPassword,
       token
     });
@@ -71,18 +71,18 @@ export const login = async (req: Request, res: Response) => {
       return res.status(400).json({ errors: result.error.format() });
     }
 
-    const { username, password } = result.data;
+    const { email, password } = result.data;
 
-    // Find user by username
-    const user = await storage.getUserByUsername(username);
+    // Find user by email
+    const user = await storage.getUserByEmail(email);
     if (!user) {
-      return res.status(401).json({ message: 'Invalid username or password' });
+      return res.status(401).json({ message: 'Email ou senha inválidos' });
     }
 
     // Verify password
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      return res.status(401).json({ message: 'Invalid username or password' });
+      return res.status(401).json({ message: 'Email ou senha inválidos' });
     }
 
     // Generate JWT token
@@ -100,25 +100,25 @@ export const login = async (req: Request, res: Response) => {
     const { password: _, ...userWithoutPassword } = user;
 
     return res.status(200).json({
-      message: 'Login successful',
+      message: 'Login bem-sucedido',
       user: userWithoutPassword,
       token
     });
   } catch (error) {
     console.error('Login error:', error);
-    return res.status(500).json({ message: 'Server error during login' });
+    return res.status(500).json({ message: 'Erro no servidor durante o login' });
   }
 };
 
 export const getCurrentUser = async (req: Request, res: Response) => {
   try {
     if (!req.user) {
-      return res.status(401).json({ message: 'Not authenticated' });
+      return res.status(401).json({ message: 'Não autenticado' });
     }
 
     const user = await storage.getUser(req.user.id);
     if (!user) {
-      return res.status(404).json({ message: 'User not found' });
+      return res.status(404).json({ message: 'Usuário não encontrado' });
     }
 
     // Remove password from response
@@ -127,6 +127,6 @@ export const getCurrentUser = async (req: Request, res: Response) => {
     return res.status(200).json(userWithoutPassword);
   } catch (error) {
     console.error('Get current user error:', error);
-    return res.status(500).json({ message: 'Server error' });
+    return res.status(500).json({ message: 'Erro no servidor' });
   }
 };
