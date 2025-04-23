@@ -27,9 +27,9 @@ export default function CourseCard({ course, enrollment, notes = 0 }: CourseCard
     if (!enrollment) return null;
     
     if (enrollment.completed) {
-      return <Badge className="absolute right-3 top-3 bg-secondary">Completed</Badge>;
+      return <Badge className="absolute right-3 top-3 bg-secondary">Concluído</Badge>;
     } else {
-      return <Badge className="absolute right-3 top-3 bg-accent">In Progress</Badge>;
+      return <Badge className="absolute right-3 top-3 bg-accent">Em Andamento</Badge>;
     }
   };
 
@@ -63,14 +63,14 @@ export default function CourseCard({ course, enrollment, notes = 0 }: CourseCard
             </Avatar>
             <p className="ml-2 text-xs text-gray-600">{course.instructor}</p>
           </div>
-          <div className="text-xs text-gray-600">{course.duration} weeks</div>
+          <div className="text-xs text-gray-600">{course.duration} semanas</div>
         </div>
         
         {enrollment && (
           <div className="mt-3 border-t pt-3">
             <div className="flex items-center justify-between">
-              <div className="text-xs text-gray-500">Progress: {enrollment.progress}%</div>
-              <div className="text-xs font-medium text-primary">{notes} notes</div>
+              <div className="text-xs text-gray-500">Progresso: {enrollment.progress}%</div>
+              <div className="text-xs font-medium text-primary">{notes} anotações</div>
             </div>
             <Progress value={enrollment.progress} className="mt-1 h-1.5" />
           </div>

@@ -83,15 +83,15 @@ export default function Notes() {
     <div className="p-4 lg:p-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
         <div className="mb-4 md:mb-0">
-          <h1 className="text-2xl font-bold text-gray-900">My Notes</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Minhas Anotações</h1>
           <p className="text-gray-600 text-sm">
-            Manage and organize your course notes
+            Gerencie e organize suas anotações de curso
           </p>
         </div>
 
         <Button className="flex items-center" onClick={handleNewNote}>
           <Plus className="mr-2 h-4 w-4" />
-          New Note
+          Nova Anotação
         </Button>
       </div>
 
@@ -100,7 +100,7 @@ export default function Notes() {
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
           <Input
             type="search"
-            placeholder="Search notes..."
+            placeholder="Pesquisar anotações..."
             className="pl-8 w-full"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -115,10 +115,10 @@ export default function Notes() {
               onValueChange={setSelectedCourse}
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Filter by course" />
+                <SelectValue placeholder="Filtrar por curso" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Courses</SelectItem>
+                <SelectItem value="all">Todos os Cursos</SelectItem>
                 {enrollments?.map((enrollment) => (
                   <SelectItem
                     key={enrollment.courseId}
@@ -138,10 +138,10 @@ export default function Notes() {
               onValueChange={setSelectedTag}
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Filter by tag" />
+                <SelectValue placeholder="Filtrar por etiqueta" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Tags</SelectItem>
+                <SelectItem value="all">Todas as Etiquetas</SelectItem>
                 {allTags.map((tag) => (
                   <SelectItem key={tag} value={tag}>
                     {tag}
