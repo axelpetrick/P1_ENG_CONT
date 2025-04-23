@@ -158,7 +158,7 @@ export default function Sidebar({ isMobileSidebarOpen, closeMobileSidebar }: Sid
           onClick={handleLogout}
         >
           <LogOut className="mr-2 h-5 w-5" />
-          <span>Logout</span>
+          <span>Sair</span>
         </Button>
       </div>
     </aside>
