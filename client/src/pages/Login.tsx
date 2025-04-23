@@ -32,47 +32,47 @@ export default function Login() {
             <path d="M19.25 9V14.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M12 13.25V19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          EduNotes
+          EduNotas
         </h1>
-        <p className="text-gray-600">Course Management & Student Notes System</p>
+        <p className="text-gray-600">Sistema de Gestão de Cursos e Anotações de Alunos</p>
       </div>
 
       <div className="w-full max-w-md px-4">
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Welcome to EduNotes</h2>
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">Bem-vindo ao EduNotas</h2>
           <p className="text-gray-600 mb-4">
-            A complete solution for managing your courses and organizing your study notes.
+            Uma solução completa para gerenciar seus cursos e organizar suas anotações de estudo.
           </p>
           <div className="space-y-2">
             <div className="flex items-center">
               <svg className="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Dual database integration</span>
+              <span>Integração com banco de dados duplo</span>
             </div>
             <div className="flex items-center">
               <svg className="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Course management with SQLite</span>
+              <span>Gerenciamento de cursos com SQLite</span>
             </div>
             <div className="flex items-center">
               <svg className="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Rich notes with MongoDB</span>
+              <span>Anotações avançadas com MongoDB</span>
             </div>
             <div className="flex items-center">
               <svg className="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Insightful analytics and reports</span>
+              <span>Relatórios e análises detalhadas</span>
             </div>
           </div>
         </div>
 
         <p className="text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} EduNotes. All rights reserved.
+          © {new Date().getFullYear()} EduNotas. Todos os direitos reservados.
         </p>
       </div>
 

@@ -66,14 +66,14 @@ export default function AuthModal({
       onSuccess: () => {
         onClose();
         toast({
-          title: "Login successful",
-          description: "Welcome back to EduNotes!",
+          title: "Login bem-sucedido",
+          description: "Bem-vindo de volta ao EduNotas!",
         });
       },
       onError: (error) => {
         toast({
-          title: "Login failed",
-          description: error.message || "Invalid username or password",
+          title: "Falha no login",
+          description: error.message || "Nome de usuário ou senha inválidos",
           variant: "destructive",
         });
       },
@@ -86,14 +86,14 @@ export default function AuthModal({
       onSuccess: () => {
         onClose();
         toast({
-          title: "Registration successful",
-          description: "Welcome to EduNotes! Your account has been created.",
+          title: "Cadastro realizado com sucesso",
+          description: "Bem-vindo ao EduNotas! Sua conta foi criada.",
         });
       },
       onError: (error) => {
         toast({
-          title: "Registration failed",
-          description: error.message || "There was a problem creating your account",
+          title: "Falha no cadastro",
+          description: error.message || "Houve um problema ao criar sua conta",
           variant: "destructive",
         });
       },
@@ -110,7 +110,7 @@ export default function AuthModal({
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="text-center text-xl">
-            {mode === "login" ? "Login to EduNotes" : "Create an Account"}
+            {mode === "login" ? "Entrar no EduNotas" : "Criar uma Conta"}
           </DialogTitle>
         </DialogHeader>
 
@@ -122,9 +122,9 @@ export default function AuthModal({
                 name="username"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Username</FormLabel>
+                    <FormLabel>Nome de usuário</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your username" {...field} />
+                      <Input placeholder="Digite seu nome de usuário" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -136,7 +136,7 @@ export default function AuthModal({
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Password</FormLabel>
+                    <FormLabel>Senha</FormLabel>
                     <FormControl>
                       <Input type="password" placeholder="••••••••" {...field} />
                     </FormControl>
@@ -152,11 +152,11 @@ export default function AuthModal({
                     htmlFor="remember"
                     className="text-sm text-gray-700 cursor-pointer"
                   >
-                    Remember me
+                    Lembrar-me
                   </label>
                 </div>
                 <Button variant="link" className="p-0 h-auto text-primary">
-                  Forgot password?
+                  Esqueceu a senha?
                 </Button>
               </div>
 
@@ -165,7 +165,7 @@ export default function AuthModal({
                 className="w-full"
                 disabled={loginMutation.isPending}
               >
-                {loginMutation.isPending ? "Logging in..." : "Login"}
+                {loginMutation.isPending ? "Entrando..." : "Entrar"}
               </Button>
             </form>
           </Form>
@@ -178,9 +178,9 @@ export default function AuthModal({
                   name="firstName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>First name</FormLabel>
+                      <FormLabel>Nome</FormLabel>
                       <FormControl>
-                        <Input placeholder="John" {...field} />
+                        <Input placeholder="João" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -192,9 +192,9 @@ export default function AuthModal({
                   name="lastName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Last name</FormLabel>
+                      <FormLabel>Sobrenome</FormLabel>
                       <FormControl>
-                        <Input placeholder="Doe" {...field} />
+                        <Input placeholder="Silva" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -207,9 +207,9 @@ export default function AuthModal({
                 name="username"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Username</FormLabel>
+                    <FormLabel>Nome de usuário</FormLabel>
                     <FormControl>
-                      <Input placeholder="johndoe" {...field} />
+                      <Input placeholder="joaosilva" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -225,7 +225,7 @@ export default function AuthModal({
                     <FormControl>
                       <Input
                         type="email"
-                        placeholder="your@email.com"
+                        placeholder="seu@email.com"
                         {...field}
                       />
                     </FormControl>
@@ -239,7 +239,7 @@ export default function AuthModal({
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Password</FormLabel>
+                    <FormLabel>Senha</FormLabel>
                     <FormControl>
                       <Input type="password" placeholder="••••••••" {...field} />
                     </FormControl>
@@ -253,7 +253,7 @@ export default function AuthModal({
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Confirm Password</FormLabel>
+                    <FormLabel>Confirmar Senha</FormLabel>
                     <FormControl>
                       <Input
                         type="password"
@@ -272,13 +272,13 @@ export default function AuthModal({
                   htmlFor="terms"
                   className="text-sm text-gray-700 cursor-pointer"
                 >
-                  I agree to the{" "}
+                  Eu concordo com os{" "}
                   <Button variant="link" className="p-0 h-auto text-primary">
-                    Terms
+                    Termos
                   </Button>{" "}
-                  and{" "}
+                  e a{" "}
                   <Button variant="link" className="p-0 h-auto text-primary">
-                    Privacy Policy
+                    Política de Privacidade
                   </Button>
                 </label>
               </div>
@@ -288,7 +288,7 @@ export default function AuthModal({
                 className="w-full"
                 disabled={registerMutation.isPending}
               >
-                {registerMutation.isPending ? "Creating Account..." : "Create Account"}
+                {registerMutation.isPending ? "Criando Conta..." : "Criar Conta"}
               </Button>
             </form>
           </Form>
@@ -297,24 +297,24 @@ export default function AuthModal({
         <div className="mt-4 text-center text-sm text-gray-600">
           {mode === "login" ? (
             <p>
-              Don't have an account?{" "}
+              Não tem uma conta?{" "}
               <Button
                 variant="link"
                 className="p-0 h-auto text-primary"
                 onClick={toggleMode}
               >
-                Register now
+                Cadastre-se agora
               </Button>
             </p>
           ) : (
             <p>
-              Already have an account?{" "}
+              Já tem uma conta?{" "}
               <Button
                 variant="link"
                 className="p-0 h-auto text-primary"
                 onClick={toggleMode}
               >
-                Login
+                Entrar
               </Button>
             </p>
           )}
