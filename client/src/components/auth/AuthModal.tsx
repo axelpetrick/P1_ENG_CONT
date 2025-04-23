@@ -41,7 +41,7 @@ export default function AuthModal({
   const loginForm = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
-      username: "",
+      email: "",
       password: "",
     },
   });
@@ -73,7 +73,7 @@ export default function AuthModal({
       onError: (error) => {
         toast({
           title: "Falha no login",
-          description: error.message || "Nome de usuário ou senha inválidos",
+          description: error.message || "Email ou senha inválidos",
           variant: "destructive",
         });
       },
@@ -119,12 +119,12 @@ export default function AuthModal({
             <form onSubmit={loginForm.handleSubmit(onLoginSubmit)} className="space-y-4">
               <FormField
                 control={loginForm.control}
-                name="username"
+                name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Nome de usuário</FormLabel>
+                    <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="Digite seu nome de usuário" {...field} />
+                      <Input placeholder="Digite seu email" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

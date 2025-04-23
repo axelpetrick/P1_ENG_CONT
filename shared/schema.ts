@@ -86,7 +86,7 @@ export type DashboardStats = z.infer<typeof dashboardStatsSchema>;
 
 // Auth Schemas
 export const loginSchema = z.object({
-  username: z.string().min(3, "Nome de usuário deve ter pelo menos 3 caracteres"),
+  email: z.string().email("Digite um endereço de email válido"),
   password: z.string().min(6, "Senha deve ter pelo menos 6 caracteres"),
 });
 
