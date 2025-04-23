@@ -38,14 +38,14 @@ export default function Courses() {
       queryClient.invalidateQueries({ queryKey: ["/api/enrollments"] });
       queryClient.invalidateQueries({ queryKey: ["/api/dashboard/stats"] });
       toast({
-        title: "Success",
-        description: "Successfully enrolled in the course",
+        title: "Sucesso",
+        description: "Matriculado no curso com sucesso",
       });
     },
     onError: (error) => {
       toast({
-        title: "Error",
-        description: error.message || "Failed to enroll in the course",
+        title: "Erro",
+        description: error.message || "Falha ao matricular-se no curso",
         variant: "destructive",
       });
     },
@@ -78,9 +78,9 @@ export default function Courses() {
     <div className="p-4 lg:p-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
         <div className="mb-4 md:mb-0">
-          <h1 className="text-2xl font-bold text-gray-900">Courses</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Cursos</h1>
           <p className="text-gray-600 text-sm">
-            Browse and enroll in available courses
+            Explore e matricule-se nos cursos disponíveis
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function Courses() {
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
             <Input
               type="search"
-              placeholder="Search courses..."
+              placeholder="Pesquisar cursos..."
               className="pl-8 w-full sm:w-64"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -138,8 +138,8 @@ export default function Courses() {
         ) : (
           <p className="col-span-3 text-center py-8 text-gray-500">
             {searchQuery
-              ? "No courses match your search criteria."
-              : "No courses available at the moment."}
+              ? "Nenhum curso corresponde aos seus critérios de pesquisa."
+              : "Nenhum curso disponível no momento."}
           </p>
         )}
       </div>
