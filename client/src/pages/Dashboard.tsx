@@ -46,16 +46,16 @@ export default function Dashboard() {
     <div className="p-4 lg:p-6">
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Painel Principal</h1>
           <p className="text-gray-600 text-sm">
-            Welcome back, {user?.firstName}!
+            Bem-vindo de volta, {user?.firstName}!
           </p>
         </div>
         <div className="mt-4 lg:mt-0">
           <Link href="/courses">
             <Button className="flex items-center bg-primary hover:bg-primary/90">
               <Plus className="mr-2 h-4 w-4" />
-              Join New Course
+              Participar de Novo Curso
             </Button>
           </Link>
         </div>
@@ -73,28 +73,28 @@ export default function Dashboard() {
         ) : (
           <>
             <StatsCard
-              title="Enrolled Courses"
+              title="Cursos Matriculados"
               value={stats?.enrolledCourses || 0}
               icon={<GraduationCap />}
               iconBgColor="bg-indigo-100"
               iconColor="text-primary"
             />
             <StatsCard
-              title="Total Notes"
+              title="Total de Anotações"
               value={stats?.totalNotes || 0}
               icon={<StickyNote />}
               iconBgColor="bg-emerald-100"
               iconColor="text-secondary"
             />
             <StatsCard
-              title="Completed"
+              title="Concluídos"
               value={stats?.completedCourses || 0}
               icon={<CheckCircle />}
               iconBgColor="bg-amber-100"
               iconColor="text-accent"
             />
             <StatsCard
-              title="Hours Studied"
+              title="Horas Estudadas"
               value={stats?.hoursStudied || 0}
               icon={<Clock />}
               iconBgColor="bg-blue-100"
@@ -107,9 +107,9 @@ export default function Dashboard() {
       {/* Recent Courses */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-gray-900">Recent Courses</h2>
+          <h2 className="text-lg font-semibold text-gray-900">Cursos Recentes</h2>
           <Link href="/courses">
-            <a className="text-primary text-sm">View all</a>
+            <a className="text-primary text-sm">Ver todos</a>
           </Link>
         </div>
 
@@ -131,9 +131,9 @@ export default function Dashboard() {
             ))
           ) : (
             <p className="col-span-3 text-center py-8 text-gray-500">
-              You are not enrolled in any courses yet.{" "}
+              Você ainda não está matriculado em nenhum curso.{" "}
               <Link href="/courses">
-                <a className="text-primary hover:underline">Browse courses</a>
+                <a className="text-primary hover:underline">Explorar cursos</a>
               </Link>
             </p>
           )}
@@ -143,9 +143,9 @@ export default function Dashboard() {
       {/* Recent Notes */}
       <div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-gray-900">Recent Notes</h2>
+          <h2 className="text-lg font-semibold text-gray-900">Anotações Recentes</h2>
           <Link href="/notes">
-            <a className="text-primary text-sm">View all</a>
+            <a className="text-primary text-sm">Ver todas</a>
           </Link>
         </div>
 
@@ -165,13 +165,13 @@ export default function Dashboard() {
             ))
           ) : (
             <p className="col-span-2 text-center py-8 text-gray-500">
-              You haven't created any notes yet.{" "}
+              Você ainda não criou nenhuma anotação.{" "}
               <Button
                 variant="link"
                 className="p-0 h-auto text-primary hover:underline"
                 onClick={() => setIsNoteEditorOpen(true)}
               >
-                Create your first note
+                Criar sua primeira anotação
               </Button>
             </p>
           )}

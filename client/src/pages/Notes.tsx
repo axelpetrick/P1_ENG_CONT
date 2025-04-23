@@ -177,17 +177,17 @@ export default function Notes() {
               <StickyNote className="h-6 w-6 text-gray-500" />
             </div>
             <h3 className="mt-2 text-sm font-semibold text-gray-900">
-              No notes found
+              Nenhuma anotação encontrada
             </h3>
             <p className="mt-1 text-sm text-gray-500">
               {notes && notes.length > 0
-                ? "Try adjusting your filters or search term."
-                : "Get started by creating a new note."}
+                ? "Tente ajustar seus filtros ou termo de pesquisa."
+                : "Comece criando uma nova anotação."}
             </p>
             <div className="mt-6">
               <Button onClick={handleNewNote}>
                 <Plus className="mr-2 h-4 w-4" />
-                New Note
+                Nova Anotação
               </Button>
             </div>
           </div>
