@@ -29,8 +29,6 @@ npm run dev
 
 5. Acesse a aplicação em: `http://localhost:5000`
 
-## 📚 Documentação API
-
 ## 📊 Diagramas
 
 ### Diagrama de Caso de Uso
