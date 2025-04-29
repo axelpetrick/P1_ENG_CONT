@@ -31,9 +31,6 @@ npm run dev
 
 ## 📚 Documentação API
 
-### Swagger
-A documentação da API está disponível em: `http://localhost:5000/api-docs`
-
 ## 📊 Diagramas
 
 ### Diagrama de Caso de Uso
